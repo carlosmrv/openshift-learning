@@ -1,0 +1,14 @@
+apiVersion: project.openshift.io/v1
+kind: Project
+metadata:
+  annotations:
+    openshift.io/description: 'This is the description of the project'
+    openshift.io/display-name: 'My first Project'
+    openshift.io/requester: developer
+    documentation: 'You can create your own annotations here'
+  name: desa1
+  labels:
+      tipo: desa
+spec:
+  finalizers:
+    - kubernetes
